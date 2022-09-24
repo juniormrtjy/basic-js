@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praticar</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .img {
+        margin: auto;
+        border-radius: 8px;
+        width: 300px;
+        height: 300px;
+        background: #0d0d0d;
+        color: #f2ede4;
+        line-height: 300px;
+        text-align: center;
+      }
+      .img span {
+        font-size: 30px;
+      }
+
+      .add-img {
+        background: url('https://images.unsplash.com/photo-1506551109886-6101f48c1ab9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGhhcHB5JTIwZG9nfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60')
+          no-repeat;
+        background-size: cover;
+      }
+      .add-img span {
+        display: none;
+      }
+
+      button {
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+        width: 200px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: tomato;
+        color: #f2ede4;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Praticar</h1>
+
+    <h2>
+      Você está começando o jogo das perguntas. O tema é: conhecimentos gerais.
+      Acerte o máximo que puder e libere a imagem secreta.
+    </h2>
+
+    <h3>Responda as perguntas para exibir a imagem.</h3>
+    <button onclick="perguntas()">Iniciar jogo</button>
+
+    <div class="img">
+      <span>Imagem oculta</span>
+    </div>
+
+    <!-- PARA VOCÊ, PROGRAMADOR!!!! É muito fácil liberar a imagem sem precisar responder as perguntas e tudo bem. Libere jogando, ou não. Você que sabe. -->
+
+    <!-- SCRIPT -->
+    <script src="../js/simples-perguntas.js"></script>
+  </body>
+</html>

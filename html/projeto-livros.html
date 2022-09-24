@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ... -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/projeto-livros.css" />
+    <title>Livros</title>
+  </head>
+  <body>
+    <header>
+      <h1>Livraria</h1>
+      <nav>
+        <strong class="valor">Valor da compra: R$<span>0</span></strong>
+        <button>Efetuar compra</button>
+        <button onclick="showOffer()">Desconto</button>
+        <strong class="offer-phrase"
+          >Você precisa comprar acima de R$50,00 para ganhar 15% de
+          desconto.</strong
+        >
+      </nav>
+    </header>
+
+    <!-- BOOKS -->
+    <section id="books">
+      <div class="wrapper books">
+        <h2>Qual livro deseja comprar?</h2>
+        <!-- BOOK LIST -->
+        <ul class="books-list">
+          <!-- BOOK -->
+          <li>
+            <img
+              src="https://m.media-amazon.com/images/I/41hybnrvb8L._AC_UF226,226_FMjpg_.jpg"
+              alt=""
+            />
+            <strong class="book-one-value"
+              ><small><sup>R$</sup></small> <span>36,90</span></strong
+            >
+            <strong
+              ><a
+                target="_blank"
+                href="https://www.amazon.com.br/Pai-menina-filha-construir-rela%C3%A7%C3%A3o/dp/6555358041?ref=dlx_67407_sh_dcl_tlt_0_c4021664_dt_mese7_d9"
+                >Pai de menina: Para ler ao lado de sua filha e construir uma
+                relação para a vida toda</a
+              ></strong
+            >
+            <button onclick="addValueOne()">Adicionar ao carrinho</button>
+            <div class="buttons-ammount">
+              <strong class="book-one-ammount"
+                >Quantidade: <span>0</span></strong
+              >
+              <button onclick="removeValueOne()">-</button>
+            </div>
+          </li>
+
+          <!-- BOOK -->
+          <li>
+            <img
+              src="https://m.media-amazon.com/images/I/41p5asi0GDL._AC_UF226,226_FMjpg_.jpg"
+              alt=""
+            />
+            <strong class="book-two-value"
+              ><small><sup>R$</sup></small> <span>39,80</span></strong
+            >
+            <strong
+              ><a
+                target="_blank"
+                href="https://www.amazon.com.br/Mitologia-Contos-imortais-deuses-her%C3%B3is/dp/6555644079?ref=dlx_67407_sh_dcl_tlt_1_96c7a435_dt_mese7_d9"
+                >Mitologia: Contos imortais de deuses e heróis</a
+              ></strong
+            >
+            <button onclick="addValueTwo()">Adicionar ao carrinho</button>
+            <div class="buttons-ammount">
+              <strong class="book-two-ammount"
+                >Quantidade: <span>0</span></strong
+              >
+              <button onclick="removeValueTwo()">-</button>
+            </div>
+          </li>
+
+          <!-- BOOK -->
+          <li>
+            <img
+              src="https://m.media-amazon.com/images/I/51NcCuAy3DL._AC_UF226,226_FMjpg_.jpg"
+              alt=""
+            />
+            <strong class="book-three-value"
+              ><small><sup>R$</sup></small> <span>14,97</span></strong
+            >
+            <strong
+              ><a
+                target="_blank"
+                href="https://www.amazon.com.br/origem-das-esp%C3%A9cies-preserva%C3%A7%C3%A3o-favorecidas-ebook/dp/B08N82JTY6?ref=dlx_67407_sh_dcl_tlt_2_de6e649a_dt_mese7_d9"
+                >A origem das espécies: a origem das espécies por meio da
+                seleção natural ou a preservação das raças favorecidas na luta
+                pela vida</a
+              ></strong
+            >
+            <button onclick="addValueThree()">Adicionar ao carrinho</button>
+            <div class="buttons-ammount">
+              <strong class="book-three-ammount"
+                >Quantidade: <span>0</span></strong
+              >
+              <button onclick="removeValueThree()">-</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ... -->
+
+    <!-- SCRIPT -->
+    <script src="../js/projeto-livros.js"></script>
+  </body>
+</html>
