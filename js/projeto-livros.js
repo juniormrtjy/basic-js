@@ -23,6 +23,8 @@ booksValue[2].innerHTML = bookThree
 booksValue[3].innerHTML = bookFour
 showValue.innerHTML = buyValue
 
+// FUNCTIONS
+// pensar em como posso otimizar isso
 // FUNCTION BOOK ONE
 
 var oneAmmount = 0
