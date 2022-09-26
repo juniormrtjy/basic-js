@@ -9,23 +9,18 @@ var bookFour = 12
 // PEGANDO AS TAGS PARA INSERIR OS VALORES
 
 var showValue = document.querySelector('header nav .valor span')
-var bookOneValue = document.querySelector('.book-one-value span')
-var bookTwoValue = document.querySelector('.book-two-value span')
-var bookThreeValue = document.querySelector('.book-three-value span')
-var bookFourValue = document.querySelector('.book-four-value span')
+const booksValue = document.querySelectorAll('.book-value span')
 
 // PEGANDO AS TAGS PARA INSERIR A QUANTIDADE
-var bookOneAmmount = document.querySelector('.book-one-ammount span')
-var bookTwoAmmount = document.querySelector('.book-two-ammount span')
-var bookThreeAmmount = document.querySelector('.book-three-ammount span')
-var bookFourAmmount = document.querySelector('.book-four-ammount span')
+
+const booksAmmount = document.querySelectorAll('.book-ammount span')
 
 // EXPORTANDO OS VALORES
 
-bookOneValue.innerHTML = bookOne
-bookTwoValue.innerHTML = bookTwo
-bookThreeValue.innerHTML = bookThree
-bookFourValue.innerHTML = bookFour
+booksValue[0].innerHTML = bookOne
+booksValue[1].innerHTML = bookTwo
+booksValue[2].innerHTML = bookThree
+booksValue[3].innerHTML = bookFour
 showValue.innerHTML = buyValue
 
 // FUNCTION BOOK ONE
@@ -35,7 +30,7 @@ function addValueOne() {
   buyValue += bookOne
   oneAmmount++
   showValue.innerHTML = parseInt(buyValue)
-  bookOneAmmount.innerHTML = oneAmmount
+  booksAmmount[0].innerHTML = oneAmmount
 }
 
 function removeValueOne() {
@@ -43,11 +38,11 @@ function removeValueOne() {
     buyValue = buyValue - bookOne
     oneAmmount--
     showValue.innerHTML = parseInt(buyValue)
-    bookOneAmmount.innerHTML = oneAmmount
+    booksAmmount[0].innerHTML = oneAmmount
   } else if (buyValue <= 0) {
     showValue.innerHTML = '0'
   } else if (oneAmmount == 0) {
-    bookOneAmmount.innerHTML = 0
+    booksAmmount[0].innerHTML = 0
   }
 }
 
@@ -58,7 +53,7 @@ function addValueTwo() {
   buyValue += bookTwo
   twoAmmount++
   showValue.innerHTML = parseInt(buyValue)
-  bookTwoAmmount.innerHTML = twoAmmount
+  booksAmmount[1].innerHTML = twoAmmount
 }
 
 function removeValueTwo() {
@@ -66,11 +61,11 @@ function removeValueTwo() {
     buyValue = buyValue - bookTwo
     twoAmmount--
     showValue.innerHTML = parseInt(buyValue)
-    bookTwoAmmount.innerHTML = twoAmmount
+    booksAmmount[1].innerHTML = twoAmmount
   } else if (buyValue <= 0) {
     showValue.innerHTML = '0'
   } else if (twoAmmount == 0) {
-    bookTwoAmmount.innerHTML = 0
+    booksAmmount[1].innerHTML = 0
   }
 }
 
@@ -81,7 +76,7 @@ function addValueThree() {
   buyValue += bookThree
   threeAmmount++
   showValue.innerHTML = parseInt(buyValue)
-  bookThreeAmmount.innerHTML = threeAmmount
+  booksAmmount[2].innerHTML = threeAmmount
 }
 
 function removeValueThree() {
@@ -89,11 +84,11 @@ function removeValueThree() {
     buyValue = buyValue - bookThree
     threeAmmount--
     showValue.innerHTML = parseInt(buyValue)
-    bookThreeAmmount.innerHTML = threeAmmount
+    booksAmmount[2].innerHTML = threeAmmount
   } else if (buyValue <= 0) {
     showValue.innerHTML = '0'
   } else if (threeAmmount == 0) {
-    bookThreeAmmount.innerHTML = 0
+    booksAmmount[2].innerHTML = 0
   }
 }
 
@@ -104,7 +99,7 @@ function addValueFour() {
   buyValue += bookFour
   fourAmmount++
   showValue.innerHTML = parseInt(buyValue)
-  bookFourAmmount.innerHTML = fourAmmount
+  booksAmmount[3].innerHTML = fourAmmount
 }
 
 function removeValueFour() {
@@ -112,11 +107,11 @@ function removeValueFour() {
     buyValue = buyValue - bookFour
     fourAmmount--
     showValue.innerHTML = parseInt(buyValue)
-    bookFourAmmount.innerHTML = fourAmmount
+    booksAmmount[3].innerHTML = fourAmmount
   } else if (buyValue <= 0) {
     showValue.innerHTML = '0'
   } else if (fourAmmount == 0) {
-    bookFourAmmount.innerHTML = 0
+    booksAmmount[3].innerHTML = 0
   }
 }
 
