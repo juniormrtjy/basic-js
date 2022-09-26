@@ -17,10 +17,11 @@ const booksAmmount = document.querySelectorAll('.book-ammount span')
 
 // EXPORTANDO OS VALORES
 
-booksValue[0].innerHTML = bookOne
-booksValue[1].innerHTML = bookTwo
-booksValue[2].innerHTML = bookThree
-booksValue[3].innerHTML = bookFour
+const booksArr = [bookOne, bookTwo, bookThree, bookFour]
+
+for (let index in booksArr) {
+  booksValue[index].innerHTML = booksArr[index]
+}
 showValue.innerHTML = buyValue
 
 // FUNCTIONS
