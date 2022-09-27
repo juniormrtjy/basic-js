@@ -15,14 +15,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Card</title>
     <style>
+      :root {
+        --bg-color: #0984e3;
+        --text-color: #f2ede4;
+        --border-color: #70b4e9;
+        --btn-color: #226496;
+        --first-btn-hover: #296ea3;
+        --alt-btn-color: #02253b;
+        --alt-btn-hover: #043c5f;
+      }
+      body.dark {
+        --bg-color: #0d0d0d;
+        --text-color: #f2ede4;
+        --border-color: #797979;
+        --btn-color: #2e2e2e;
+        --first-btn-hover: #3f3f3f;
+        --alt-btn-color: #808080;
+        --alt-btn-hover: #5a5a5a;
+      }
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
       body {
-        background-color: #0984e3;
-        color: #f2ede4;
+        background-color: var(--bg-color);
+        color: var(--text-color);
         text-align: center;
         font-family: 'Source Sans Pro';
       }
@@ -32,33 +50,10 @@
         margin-block: 20px;
       }
 
-      .card {
-        max-width: 280px;
-        margin: auto;
-      }
-
-      .img {
-        background: #f2ede4;
-        padding: 8px;
-      }
-      img {
-        max-width: 100%;
-        display: block;
-      }
-
-      .text {
-        text-align: left;
-
-        display: flex;
-        justify-content: space-between;
-        padding: 8px;
-        color: #f2ede4;
-      }
-
       .register {
         max-width: 250px;
         margin: auto;
-        border: 1px solid #70b4e9;
+        border: 1px solid var(--border-color);
         border-radius: 8px;
         padding: 10px;
 
@@ -72,11 +67,11 @@
 
       button {
         cursor: pointer;
-        background: #226496;
+        background: var(--btn-color);
 
         font-size: 16px;
         font-weight: bold;
-        color: #f2ede4;
+        color: var(--text-color);
         padding: 7px;
         border: none;
         border-radius: 3px;
@@ -85,18 +80,42 @@
       }
 
       button:hover {
-        background-color: #296ea3;
+        background-color: var(--first-btn-hover);
       }
 
       button:nth-child(1) {
-        background-color: #02253b;
+        background-color: var(--alt-btn-color);
       }
       button:nth-child(1):hover {
-        background-color: #043c5f;
+        background-color: var(--alt-btn-hover);
+      }
+      .mode {
+        width: 40px;
+        height: 20px;
+        background: var(--alt-btn-color);
+        border-radius: 20px;
+        position: relative;
+        cursor: pointer;
+      }
+      .mode::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 50%;
+        left: 3px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: var(--btn-color);
+        transition: 0.2s;
+      }
+
+      body.dark .mode::before {
+        left: 21px;
       }
     </style>
   </head>
-  <body>
+  <body class="dark">
     <h1>Simple Card</h1>
 
     <!-- REGISTRO SEM FORMULÁRIO, PORQUE AINDA NÃO SEI INTERAGIR COM O FORMULÁRIO -->
@@ -104,6 +123,7 @@
       <h3>Register</h3>
       <button onclick="setUserName()">Username</button>
       <a href="simple-card-02.html"><button>See my card</button></a>
+      <div class="mode"></div>
     </div>
 
     <!-- SCRIPT -->

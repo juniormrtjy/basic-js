@@ -23,3 +23,10 @@ function setUserName() {
 function loadPage() {
   userName.innerHTML += user.name
 }
+
+// DARK MODE
+
+const mode = document.querySelector('.mode')
+mode.addEventListener('click', () => {
+  document.body.classList.toggle('dark')
+})
