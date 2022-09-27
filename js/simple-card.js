@@ -24,9 +24,23 @@ function loadPage() {
   userName.innerHTML += user.name
 }
 
-// DARK MODE
+function loadMode() {
+  if (darkMode == 'on') {
+    document.body.classList.add('dark')
+  }
+}
 
+// DARK MODE
+let darkMode = localStorage.getItem('darkm')
 const mode = document.querySelector('.mode')
 mode.addEventListener('click', () => {
-  document.body.classList.toggle('dark')
+  if (darkMode != 'on') {
+    document.body.classList.add('dark')
+    localStorage.setItem('darkm', 'on')
+    darkMode = 'on'
+  } else {
+    document.body.classList.remove('dark')
+    localStorage.setItem('darkm', 'off')
+    darkMode = 'off'
+  }
 })
