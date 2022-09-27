@@ -49,3 +49,4 @@ function loadMode() {
     document.body.classList.remove('dark')
   }
 }
+chrome_options.add_argument('--log-level=1')
