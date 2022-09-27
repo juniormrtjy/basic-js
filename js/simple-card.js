@@ -32,6 +32,7 @@ function loadMode() {
     darkMode = 'on'
   } else {
     document.body.classList.remove('dark')
+    darkMode = 'off'
   }
 }
 
