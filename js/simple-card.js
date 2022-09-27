@@ -42,10 +42,8 @@ mode.addEventListener('click', () => {
 
 function loadMode() {
   if (darkMode === 'on') {
-    darkMode = 'on'
     document.body.classList.add('dark')
   } else {
-    darkMode = 'off'
     document.body.classList.remove('dark')
   }
 }
