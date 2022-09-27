@@ -29,6 +29,7 @@ function loadPage() {
 function loadMode() {
   if (darkMode === 'on') {
     document.body.classList.add('dark')
+    darkMode = 'on'
   } else {
     document.body.classList.remove('dark')
   }
