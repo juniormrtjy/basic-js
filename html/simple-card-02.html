@@ -104,6 +104,22 @@
       body.dark .mode::before {
         left: 21px;
       }
+
+      .back {
+        max-width: 100px;
+        position: fixed;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+      }
+      .back a {
+        color: var(--text-color);
+        padding: 10px;
+        display: block;
+        background: var(--btn-color);
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
     </style>
   </head>
   <body onload="loadPage(); loadMode()">
@@ -144,8 +160,33 @@
       </div>
       <div>
         <div class="mode"></div>
-        <a href="simple-card.html">Voltar</a>
       </div>
+    </div>
+    <div class="back">
+      <a href="simple-card.html"
+        ><svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 19L4 13L10 7"
+            stroke="#F2EDE4"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M28 25C28 21.8174 26.7357 18.7652 24.4853 16.5147C22.2348 14.2643 19.1826 13 16 13H4"
+            stroke="#F2EDE4"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
     </div>
 
     <!-- SCRIPT -->
