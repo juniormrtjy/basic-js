@@ -24,13 +24,14 @@ function loadPage() {
   userName.innerHTML += user.name
 }
 
+// DARK MODE
+
 function loadMode() {
   if (darkMode == 'on') {
     document.body.classList.add('dark')
   }
 }
 
-// DARK MODE
 let darkMode = localStorage.getItem('darkm')
 const mode = document.querySelector('.mode')
 mode.addEventListener('click', () => {
