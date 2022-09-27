@@ -29,6 +29,8 @@ function loadPage() {
 function loadMode() {
   if (darkMode == 'on') {
     document.body.classList.add('dark')
+  } else {
+    document.body.classList.remove('dark')
   }
 }
 
