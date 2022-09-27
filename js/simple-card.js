@@ -26,16 +26,6 @@ function loadPage() {
 
 // DARK MODE
 
-function loadMode() {
-  if (darkMode === 'on') {
-    darkMode = 'on'
-    document.body.classList.add('dark')
-  } else {
-    darkMode = 'off'
-    document.body.classList.remove('dark')
-  }
-}
-
 let darkMode = localStorage.getItem('darkm')
 const mode = document.querySelector('.mode')
 mode.addEventListener('click', () => {
@@ -49,3 +39,13 @@ mode.addEventListener('click', () => {
     darkMode = 'off'
   }
 })
+
+function loadMode() {
+  if (darkMode === 'on') {
+    darkMode = 'on'
+    document.body.classList.add('dark')
+  } else {
+    darkMode = 'off'
+    document.body.classList.remove('dark')
+  }
+}
