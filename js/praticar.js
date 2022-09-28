@@ -3,7 +3,7 @@ var heroGame = document.querySelector('#hero')
 let left = 0
 let walkX = 0
 let walkY = 0
-let walk = 100
+let walk = 20
 
 function moveRight() {
   personagem.toRight(walk)
