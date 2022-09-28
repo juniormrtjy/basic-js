@@ -6,8 +6,36 @@
 
 /* ROOT */
 :root {
+  --head-bg-color: #e74c3c;
+  --header-strong-bg: #272727;
+  --header-btn: #2980b9;
+  --text-color: #0d0d0d;
+  --txt-light: #f2ede4;
+  --btn-bg-color: #16a085;
+  --btn-border: #cfcfcf;
+  --box-shadow: #cfcfcf;
+  --btn-ammount: #c0392b;
+  --nav-bg-color: #0d0d0d;
+
   --font-source: 'Source Sans Pro';
   --font-amatic: 'Amatic SC';
+}
+
+body.dark {
+  --head-bg-color: #111111;
+  --header-strong-bg: #0c0c0c;
+  --header-btn: #474f55;
+  --text-color: #f2ede4;
+  --btn-bg-color: #02362c;
+  --btn-border: #272626;
+  --box-shadow: #131313;
+  --btn-ammount: #c0392b;
+  --nav-bg-color: #1d1d1d;
+}
+
+body.dark {
+  background: #0d0d0d;
+  color: #f2ede4;
 }
 
 html,
@@ -25,6 +53,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
 .wrapper {
@@ -33,10 +62,10 @@ a {
 }
 
 button {
-  background-color: #16a085;
-  color: white;
+  background-color: var(--btn-bg-color);
+  color: var(--text-color);
   padding: 10px;
-  border: 1px solid #cfcfcf;
+  border: 1px solid var(--btn-border);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -44,8 +73,8 @@ button {
 /* HEADER */
 
 header {
-  background-color: #e74c3c;
-  color: #fff;
+  background-color: var(--head-bg-color);
+  color: var(--text-color);
 }
 
 header h1 {
@@ -55,7 +84,7 @@ header h1 {
 }
 
 header nav {
-  background-color: #0d0d0d;
+  background-color: var(--nav-bg-color);
   padding: 12px;
 
   display: flex;
@@ -66,14 +95,20 @@ header nav {
 
 header nav strong:nth-child(1) {
   display: inline-block;
-  background: #272727;
+  background: var(--header-strong-bg);
+  color: var(--txt-light);
   padding: 10px;
   border-radius: 8px;
 }
 
 header nav button {
   border: none;
-  background-color: #2980b9;
+  background-color: var(--header-btn);
+  color: var(--txt-light);
+}
+
+.offer-phrase {
+  color: var(--txt-light);
 }
 
 /* BOOKS */
@@ -99,6 +134,7 @@ header nav button {
 }
 
 .books-list li {
+  background-color: var(--bg-light);
   display: grid;
   gap: 10px;
 
@@ -106,7 +142,7 @@ header nav button {
 
   border-radius: 8px;
 
-  box-shadow: 3px 5px 20px #cfcfcf;
+  box-shadow: 3px 5px 20px var(--box-shadow);
 }
 
 .books-list li strong {
@@ -126,5 +162,33 @@ header nav button {
   padding: 5px 10px;
   font-size: 20px;
 
-  background: #c0392b;
+  background: var(--btn-ammount);
+}
+
+/* DARK MODE */
+.mode {
+  width: 40px;
+  height: 20px;
+  background: var(--text-color);
+  border-radius: 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+.mode::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--box-shadow);
+  transition: 0.2s;
+}
+
+body.dark .mode::before {
+  left: 21px;
 }
