@@ -1,10 +1,10 @@
 // VARIÁVEIS
 
 var buyValue = 0
-var bookOne = 36
-var bookTwo = 39
-var bookThree = 14
-var bookFour = 12
+var bookOne = 36.9
+var bookTwo = 39.8
+var bookThree = 28.48
+var bookFour = 12.4
 
 // PEGANDO AS TAGS PARA INSERIR OS VALORES
 
@@ -32,7 +32,7 @@ var oneAmmount = 0
 function addValueOne() {
   buyValue += bookOne
   oneAmmount++
-  showValue.innerHTML = parseInt(buyValue)
+  showValue.innerHTML = buyValue.toFixed(2)
   booksAmmount[0].innerHTML = oneAmmount
 }
 
@@ -40,7 +40,7 @@ function removeValueOne() {
   if (oneAmmount > 0) {
     buyValue = buyValue - bookOne
     oneAmmount--
-    showValue.innerHTML = parseInt(buyValue)
+    showValue.innerHTML = buyValue.toFixed(2)
     booksAmmount[0].innerHTML = oneAmmount
   } else if (buyValue <= 0) {
     showValue.innerHTML = '0'
@@ -55,7 +55,7 @@ var twoAmmount = 0
 function addValueTwo() {
   buyValue += bookTwo
   twoAmmount++
-  showValue.innerHTML = parseInt(buyValue)
+  showValue.innerHTML = buyValue.toFixed(2)
   booksAmmount[1].innerHTML = twoAmmount
 }
 
@@ -63,7 +63,7 @@ function removeValueTwo() {
   if (twoAmmount > 0) {
     buyValue = buyValue - bookTwo
     twoAmmount--
-    showValue.innerHTML = parseInt(buyValue)
+    showValue.innerHTML = buyValue.toFixed(2)
     booksAmmount[1].innerHTML = twoAmmount
   } else if (buyValue <= 0) {
     showValue.innerHTML = '0'
@@ -78,7 +78,7 @@ var threeAmmount = 0
 function addValueThree() {
   buyValue += bookThree
   threeAmmount++
-  showValue.innerHTML = parseInt(buyValue)
+  showValue.innerHTML = buyValue.toFixed(2)
   booksAmmount[2].innerHTML = threeAmmount
 }
 
@@ -86,7 +86,7 @@ function removeValueThree() {
   if (threeAmmount > 0) {
     buyValue = buyValue - bookThree
     threeAmmount--
-    showValue.innerHTML = parseInt(buyValue)
+    showValue.innerHTML = buyValue.toFixed(2)
     booksAmmount[2].innerHTML = threeAmmount
   } else if (buyValue <= 0) {
     showValue.innerHTML = '0'
@@ -101,7 +101,7 @@ var fourAmmount = 0
 function addValueFour() {
   buyValue += bookFour
   fourAmmount++
-  showValue.innerHTML = parseInt(buyValue)
+  showValue.innerHTML = buyValue.toFixed(2)
   booksAmmount[3].innerHTML = fourAmmount
 }
 
@@ -109,7 +109,7 @@ function removeValueFour() {
   if (fourAmmount > 0) {
     buyValue = buyValue - bookFour
     fourAmmount--
-    showValue.innerHTML = parseInt(buyValue)
+    showValue.innerHTML = buyValue.toFixed(2)
     booksAmmount[3].innerHTML = fourAmmount
   } else if (buyValue <= 0) {
     showValue.innerHTML = '0'
@@ -134,8 +134,8 @@ function showOffer() {
   if (buyValue >= 50) {
     descount.innerHTML =
       'Parabéns, você ganhou 15% de desconto. Sua compra está em: R$' +
-      offerDiscount
-    showValue.innerHTML = offerDiscount
+      offerDiscount.toFixed(2)
+    showValue.innerHTML = offerDiscount.toFixed(2)
   } else {
     descount.innerHTML = 'Seu valor ainda está abaixo de R$50,00'
   }
@@ -164,3 +164,10 @@ function loadMode() {
     document.body.classList.remove('dark')
   }
 }
+
+// TESTE
+
+let oojj = 8.9876
+let oojh = 9.877
+let aabb = oojj + oojh
+console.log(aabb.toFixed(2))
