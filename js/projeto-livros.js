@@ -164,10 +164,3 @@ function loadMode() {
     document.body.classList.remove('dark')
   }
 }
-
-// TESTE
-
-let oojj = 8.9876
-let oojh = 9.877
-let aabb = oojj + oojh
-console.log(aabb.toFixed(2))
