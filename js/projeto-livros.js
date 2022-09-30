@@ -20,7 +20,7 @@ const booksAmmount = document.querySelectorAll('.book-ammount span')
 const booksArr = [bookOne, bookTwo, bookThree, bookFour]
 
 for (let index in booksArr) {
-  booksValue[index].innerHTML = booksArr[index]
+  booksValue[index].innerHTML = booksArr[index].toFixed(2).replace('.', ',')
 }
 showValue.innerHTML = buyValue
 
