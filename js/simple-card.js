@@ -21,7 +21,7 @@ function setUserName() {
 }
 
 function loadPage() {
-  userName.innerHTML += user.name
+  userName.innerHTML += user.name.toLocaleLowerCase()
 }
 
 // DARK MODE
