@@ -1,5 +1,3 @@
-const sectionHtmlAdd = `<section><div class="wrapper"> <div class="box"><p><span> ${fruitName} </span></p></box></wrapper> <div class="btns"><button>+</button> <button>-</button></div></section>`
-
 function addItem() {
   let fruitName = prompt('Digite o nome de alguma fruta')
   let fruitArray = fruitName.split('')
