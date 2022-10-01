@@ -43,6 +43,7 @@ header {
 
 header h1 {
   font-size: 4rem;
+  font-family: var(--merienda);
   background-color: rgba(255, 255, 255, 0.678);
   color: rgb(68, 68, 68);
   max-width: 50rem;
@@ -62,6 +63,25 @@ header h1::after {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.377);
   z-index: -1;
+}
+
+/* BUTTON ADICIONAR */
+
+.additem {
+  padding-inline: 1rem;
+  margin-top: 1rem;
+}
+
+.add-item {
+  display: block;
+  width: 100%;
+  background: #fab1a0;
+  color: #f2ede4;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #5a3b34;
 }
 
 /* SECTION */
@@ -97,6 +117,7 @@ section p {
   border: 1px solid #cfcfcf;
   border-radius: 3px;
   cursor: pointer;
+  font-size: 2rem;
 
   display: grid;
   align-items: center;
@@ -106,11 +127,13 @@ section p {
 .btns button:nth-child(1) {
   background: #10ac84;
   border-color: #1e8f62;
+  color: #f2ede4;
 }
 
 .btns button:nth-child(1) svg path {
   stroke: #f2ede4;
 }
+
 .btns button:nth-child(2) svg path {
   stroke: #706f6f;
 }
