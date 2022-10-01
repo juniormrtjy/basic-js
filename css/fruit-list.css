@@ -82,6 +82,7 @@ header h1::after {
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid #5a3b34;
+  cursor: pointer;
 }
 
 /* SECTION */
@@ -103,6 +104,8 @@ section p {
   display: flex;
   align-items: center;
   gap: 10px;
+  max-width: 17rem;
+  overflow: hidden;
 }
 
 .btns {
