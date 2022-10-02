@@ -63,7 +63,7 @@ a {
 
 button {
   background-color: var(--btn-bg-color);
-  color: var(--text-color);
+  color: var(--txt-light);
   padding: 10px;
   border: 1px solid var(--btn-border);
   border-radius: 5px;
@@ -81,6 +81,7 @@ header h1 {
   font-family: var(--font-amatic);
   font-size: 50px;
   text-align: center;
+  color: var(--txt-light);
 }
 
 header nav {
@@ -163,6 +164,7 @@ header nav button {
   font-size: 20px;
 
   background: var(--btn-ammount);
+  color: var(--txt-light);
 }
 
 /* DARK MODE */
