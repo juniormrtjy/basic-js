@@ -10,15 +10,9 @@
 }
 
 body {
-  color: #585858;
+  color: #3b3b3b;
   font-size: 1.6rem;
   text-align: center;
-
-  background: url('https://images.unsplash.com/photo-1508829040592-72f179f8a73f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80')
-    no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
 }
 
 button {
@@ -30,63 +24,57 @@ button {
   margin: auto;
 }
 
-/* HEADER */
+img {
+  max-width: 100%;
+}
+
+/* header */
 
 header {
-  padding-block: 5rem;
+  margin-block: 3rem;
 }
 
-header h1 {
-  background: #0d0d0d62;
-  color: rgb(253, 253, 253);
-  padding: 1rem;
-  text-align: center;
-  border-radius: 0.5rem;
+header h2 {
+  margin-bottom: 2rem;
 }
 
-.main-section {
-  background: #adadad93;
-  padding: 1rem;
-  border-radius: 0.5rem;
+header .wrapper {
   position: relative;
+  overflow: hidden;
+}
 
+header .wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #cfcfcf;
+
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  transform: rotate(100deg);
+  border-radius: 10rem;
+}
+
+/* SECTION ONE */
+
+#register .wrapper {
   display: grid;
   gap: 1rem;
 }
 
-.main-section h2 {
-  max-width: 10rem;
-  position: absolute;
-  top: -3.6rem;
-  left: 0;
-  padding-inline: 1rem;
-  color: white;
-  text-align: center;
-  background-color: rgba(235, 8, 65, 0.596);
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
-.main-section button {
-  background-color: #74baffa9;
-  color: #f2ede4;
-  font-size: 2rem;
+#register button {
+  width: 20rem;
+  font-size: 1.8rem;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 0.8rem;
   border: none;
-  padding: 0.5rem 0rem;
 }
 
-section:nth-of-type(2) {
-  margin-top: 10rem;
-  padding: 3rem;
-  background-color: rgba(235, 8, 65, 0.596);
-}
-
-section:nth-of-type(2) .wrapper {
-  max-width: 100%;
-}
-
-section:nth-of-type(2) h2,
-section:nth-of-type(2) p {
-  color: #f2ede4;
+#register button:nth-child(2) {
+  background-color: royalblue;
+  color: white;
 }
