@@ -1,3 +1,5 @@
+// DEPOIS, com os formulários, elaborar esse login.
+
 const setUsername = document.querySelector('.set-user')
 const getLogin = document.querySelector('.login')
 
