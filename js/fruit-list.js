@@ -7,8 +7,10 @@ function addItem() {
   <section> 
     <div class="wrapper"> 
       <div class="box">
-        <p><span> ${fruitArray} </span></p> 
-        
+        <p>
+          <span> ${fruitArray} </span>
+        </p> 
+
         <div class="btns">
           <button>+</button> 
           <button>-</button>
