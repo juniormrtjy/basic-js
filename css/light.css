@@ -13,6 +13,7 @@ body {
   color: #3b3b3b;
   font-size: 1.6rem;
   text-align: center;
+  padding-block: 5rem;
 }
 
 button {
@@ -31,7 +32,7 @@ img {
 /* header */
 
 header {
-  margin-block: 3rem;
+  margin-bottom: 3rem;
 }
 
 header h2 {
