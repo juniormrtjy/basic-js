@@ -75,6 +75,6 @@ header .wrapper::before {
 }
 
 #register button:nth-child(2) {
-  background-color: royalblue;
+  background-color: #0984e3;
   color: white;
 }
