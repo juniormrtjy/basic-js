@@ -78,3 +78,19 @@ header .wrapper::before {
   background-color: #0984e3;
   color: white;
 }
+
+.resize {
+  display: none;
+}
+
+@media (min-width: 401px) {
+  .web {
+    display: none;
+  }
+
+  .resize {
+    display: block;
+    font-size: 4rem;
+    margin-top: 30rem;
+  }
+}
