@@ -80,6 +80,11 @@ header .wrapper::before {
   color: white;
 }
 
+#register button:nth-child(2) a {
+  color: red;
+  text-decoration: none;
+}
+
 .resize {
   display: none;
 }

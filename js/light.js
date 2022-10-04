@@ -11,6 +11,10 @@ function setUser() {
     localStorage.setItem('Username', prompt('Escolha o seu nome de usuário'))
     if (localStorage.getItem('Username') != 'null') {
       localStorage.setItem('UserIsTrue', true)
+
+      let setLink = 'Login'
+      let linkUrl = '../html/profile.html'
+      getLogin.innerHTML = setLink.link(linkUrl)
     }
   } else {
     alert('Você já escolheu o seu nome')
@@ -18,9 +22,15 @@ function setUser() {
 }
 
 function userLogin() {
+  if (localStorage.getItem('UserIsTrue') != 'true') {
+    alert('Você não registrou um nome.')
+  }
+}
+
+function load() {
   if (localStorage.getItem('UserIsTrue') == 'true') {
-    alert('Login Efetuado')
-  } else {
-    alert('Você ainda não registrou um nome de usuário')
+    let setLink = 'Login'
+    let linkUrl = '../html/profile.html'
+    getLogin.innerHTML = setLink.link(linkUrl)
   }
 }

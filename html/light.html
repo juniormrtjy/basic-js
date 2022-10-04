@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/light.css" />
     <title>A Luz do mundo</title>
   </head>
-  <body>
+  <body onload="load()">
     <p class="resize">Resize your screen to 450px or less</p>
     <header class="web">
       <h2>
@@ -35,7 +35,7 @@
       <div class="wrapper">
         <h3>Registre-se</h3>
         <button class="set-user" onclick="setUser()">Username</button>
-        <a href="profile.html"> <button class="login">Login</button></a>
+        <button class="login" onclick="userLogin()">Login</button>
       </div>
     </section>
 
