@@ -108,8 +108,25 @@ nav {
 
   position: fixed;
   left: 0;
-  bottom: -19.5rem;
+  bottom: -20rem;
   transition: 0.2s;
+}
+
+nav .close-menu {
+  position: absolute;
+  top: -1.6rem;
+  left: 1rem;
+  width: 10rem;
+  background-color: var(--bg);
+  display: grid;
+  place-content: center;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  transition: 0.2s;
+}
+
+nav.show .close-menu {
+  opacity: 0;
 }
 
 nav.show {

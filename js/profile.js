@@ -10,13 +10,21 @@ function load() {
   getName.innerHTML = user.name
 }
 
-nav.addEventListener('mouseover', () => {
-  nav.classList.add('show')
-})
-nav.addEventListener('mouseleave', () => {
-  nav.classList.remove('show')
-})
+function navShow() {
+  nav.classList.toggle('show')
+}
 
-nav.addEventListener('click', () => {
-  nav.classList.add('show')
-})
+function navClose() {
+  nav.classList.remove('show')
+}
+
+// nav.addEventListener('mouseover', () => {
+//   nav.classList.add('show')
+// })
+// nav.addEventListener('mouseleave', () => {
+//   nav.classList.remove('show')
+// })
+
+// nav.addEventListener('click', () => {
+//   nav.classList.add('show')
+// })
