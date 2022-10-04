@@ -17,14 +17,3 @@ function navShow() {
 function navClose() {
   nav.classList.remove('show')
 }
-
-// nav.addEventListener('mouseover', () => {
-//   nav.classList.add('show')
-// })
-// nav.addEventListener('mouseleave', () => {
-//   nav.classList.remove('show')
-// })
-
-// nav.addEventListener('click', () => {
-//   nav.classList.add('show')
-// })
