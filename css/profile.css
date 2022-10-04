@@ -103,17 +103,26 @@ header img {
 
 /* LINKS */
 
-nav .wrapper {
+nav {
   width: 100vw;
+
+  position: fixed;
+  left: 0;
+  bottom: -22rem;
+  transition: 0.2s;
+}
+
+nav:hover,
+nav:focus {
+  bottom: 0;
+}
+
+nav .wrapper {
   max-width: 100%;
   background-color: var(--bg);
   padding: 2rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-
-  position: fixed;
-  left: 0;
-  bottom: 0;
 }
 
 .links li a {
