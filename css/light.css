@@ -80,9 +80,15 @@ header .wrapper::before {
   color: white;
 }
 
-#register button:nth-child(2) a {
-  color: red;
+#register .login {
+  padding: 0;
+}
+
+.login a {
+  color: #3b3b3b;
   text-decoration: none;
+  display: block;
+  padding: 1rem;
 }
 
 .resize {
