@@ -6,10 +6,14 @@ const getLogin = document.querySelector('.login')
 function setUser() {
   if (
     localStorage.getItem('Username') == 'null' ||
-    localStorage.getItem('Username') == undefined
+    localStorage.getItem('Username') == undefined ||
+    localStorage.getItem('Username') == ''
   ) {
     localStorage.setItem('Username', prompt('Escolha o seu nome de usuário'))
-    if (localStorage.getItem('Username') != 'null') {
+    if (
+      localStorage.getItem('Username') != 'null' &&
+      localStorage.getItem('Username') != ''
+    ) {
       localStorage.setItem('UserIsTrue', true)
 
       let setLink = 'Login'
