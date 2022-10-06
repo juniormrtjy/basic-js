@@ -111,6 +111,7 @@ main form input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   color: rgba(26, 23, 23, 0.38);
   font-size: 1.8rem;
+  width: 100%;
 }
 
 .acc-create {
