@@ -114,14 +114,17 @@ nav {
 
 nav .close-menu {
   position: absolute;
-  top: -1.6rem;
+  top: -3.9rem;
   left: 1rem;
-  width: 10rem;
-  background-color: var(--bg);
+  z-index: -1;
+  width: 5rem;
+  height: 5rem;
+  background-image: linear-gradient(to bottom, var(--txt), var(--bg));
   display: grid;
   place-content: center;
-  border-top-left-radius: 0.8rem;
-  border-top-right-radius: 0.8rem;
+  border-top: 1px solid var(--very-dark);
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
   transition: 0.2s;
 }
 
