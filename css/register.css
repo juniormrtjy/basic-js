@@ -64,11 +64,10 @@ a {
 /* LAYOUT */
 
 .wrapper {
+  width: 60rem;
   max-width: 60rem;
   margin: auto;
   padding-top: 6rem;
-  /* margin-top: 6.7rem; */
-  /* border: 1px solid black; */
 }
 
 /* MAIN */
