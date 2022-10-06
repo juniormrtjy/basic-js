@@ -66,116 +66,72 @@ a {
 .wrapper {
   max-width: 60rem;
   margin: auto;
-  margin-top: 6.7rem;
+  padding-top: 6rem;
+  /* margin-top: 6.7rem; */
   /* border: 1px solid black; */
 }
 
 /* MAIN */
 
 main {
-  padding-inline: 9rem;
-  /* max-width: 91.1rem; */
-  width: 91.1rem;
-  max-width: 100%;
-  border-radius: 2.4rem 0 0 2.4rem;
-  height: 100vh;
-  position: absolute;
-  right: 0;
-
-  background-color: #fff;
+  background-color: white;
+  padding-inline: 1rem;
+  padding-bottom: 2rem;
 }
 
-/* h2 */
 main h2 {
-  max-width: 29.1rem;
-  height: 2.9rem;
-  font-size: 2.4rem;
-  line-height: 2.9rem;
-  letter-spacing: 0.18rem;
+  margin-bottom: 1rem;
 }
-
-/* UL */
 
 main ul {
-  margin-top: 2.6rem;
   flex-wrap: wrap;
 }
-main ul li a {
-  width: 220px;
-  max-width: 220px;
-  height: 56px;
+
+main ul a {
   display: flex;
   align-items: center;
-  padding: 10px 0px 10px 8px;
   gap: 0.4rem;
+  color: #0d0d0d;
+  padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 0.8rem;
-
-  color: black;
-}
-
-main ul li:nth-child(2) a {
-  width: 24.9rem;
-  max-width: 24.9rem;
-}
-
-main ul li:nth-child(1) {
-  margin-right: 3.9rem;
 }
 
 /* H4 */
 main h4 {
-  position: relative;
-  left: 17.5rem;
-  margin-top: 4rem;
-  width: 9.1rem;
-  color: #1a171761;
+  text-align: center;
+  color: rgba(26, 23, 23, 0.38);
 }
 
 /* FORM */
 
 main form input {
-  border: none;
-  border-bottom: 1px solid #1a171761;
-  font-size: 1.8rem;
-  color: #1a171761;
-  padding-left: 1rem;
-
   height: 4rem;
+  padding-inline: 1rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  color: rgba(26, 23, 23, 0.38);
+  font-size: 1.8rem;
 }
 
-/* button create */
-
 .acc-create {
-  justify-content: center;
-  align-items: center;
-  height: 4.8rem;
-  border-radius: 0.8rem;
   background-color: #279574;
   color: white;
-  border: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.8rem;
   cursor: pointer;
 }
 
-main p a {
-  color: rgba(0, 0, 0, 0.12);
+.form p a {
+  color: rgba(26, 23, 23, 0.38);
 }
-main p span {
-  color: #54beb8;
+.form p span {
+  color: #279574;
+  font-weight: bold;
 }
 
-@media (max-width: 436px) {
-  main {
-    padding-inline: 2rem;
-    height: auto;
-    padding-bottom: 5rem;
-  }
-
-  /* H4 */
-  main h4 {
-    left: 0;
-    text-align: center;
-    width: 100%;
-    margin-top: 1rem;
-  }
+/* MEDIA QUERY */
+@media (min-width: 436px) {
 }
