@@ -165,6 +165,8 @@ main p span {
 @media (max-width: 436px) {
   main {
     padding-inline: 2rem;
+    height: auto;
+    padding-bottom: 5rem;
   }
 
   /* H4 */
