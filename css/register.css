@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* COLORS */
+  --black: #0d0d0d;
+  --white: #f2ede4;
+}
+
+body {
+  font-size: 1.6rem;
+  background: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80')
+    no-repeat;
+}
+
+/* RESET */
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+}
+
+/* FLEX */
+.flex {
+  display: flex;
+}
+
+/* GAP */
+
+.gap-01r {
+  gap: 1rem;
+}
+
+.gap-02r {
+  gap: 2rem;
+}
+
+.gap-03r {
+  gap: 3rem;
+}
+
+/* LAYOUT */
+
+.wrapper {
+  max-width: 60rem;
+  margin: auto;
+  margin-top: 6.7rem;
+  /* border: 1px solid black; */
+}
+
+/* MAIN */
+
+main {
+  max-width: 91.1rem;
+  width: 91.1rem;
+  border: 1px solid black;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+
+  background-color: #fff;
+}
+
+/* h2 */
+main h2 {
+  width: 29.1rem;
+  height: 2.9rem;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.18rem;
+}
+
+/* UL */
+
+main ul {
+  margin-top: 2.6rem;
+  flex-wrap: wrap;
+}
+main ul li a {
+  width: 220px;
+  max-width: 220px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 10px 8px;
+  gap: 0.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0.8rem;
+
+  color: black;
+}
+
+main ul li:nth-child(2) a {
+  width: 24.9rem;
+  max-width: 24.9rem;
+}
+
+main ul li:nth-child(1) {
+  margin-right: 3.9rem;
+}
+
+/* H4 */
+main h4 {
+  position: relative;
+  left: 17.5rem;
+  margin-top: 4rem;
+  width: 9.1rem;
+  color: #1a171761;
+}
+
+/* FORM */
+
+main form input {
+  border: none;
+  border-bottom: 1px solid #1a171761;
+  font-size: 1.8rem;
+  color: #1a171761;
+  padding-left: 1rem;
+
+  height: 4rem;
+}
+
+/* button create */
+
+.acc-create {
+  justify-content: center;
+  align-items: center;
+  height: 4.8rem;
+  border-radius: 0.8rem;
+  background-color: #279574;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+main p a {
+  color: rgba(0, 0, 0, 0.12);
+}
+main p span {
+  color: #54beb8;
+}
