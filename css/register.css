@@ -73,8 +73,8 @@ a {
 /* MAIN */
 
 main {
+  padding-inline: 9rem;
   max-width: 91.1rem;
-  width: 91.1rem;
   border-radius: 2.4rem 0 0 2.4rem;
   height: 100vh;
   position: absolute;
@@ -85,7 +85,7 @@ main {
 
 /* h2 */
 main h2 {
-  width: 29.1rem;
+  max-width: 29.1rem;
   height: 2.9rem;
   font-size: 2.4rem;
   line-height: 2.9rem;
@@ -160,4 +160,18 @@ main p a {
 }
 main p span {
   color: #54beb8;
+}
+
+@media (max-width: 436px) {
+  main {
+    padding-inline: 2rem;
+  }
+
+  /* H4 */
+  main h4 {
+    left: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
