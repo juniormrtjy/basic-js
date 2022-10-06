@@ -74,7 +74,9 @@ a {
 
 main {
   padding-inline: 9rem;
-  max-width: 91.1rem;
+  /* max-width: 91.1rem; */
+  width: 91.1rem;
+  max-width: 100%;
   border-radius: 2.4rem 0 0 2.4rem;
   height: 100vh;
   position: absolute;
