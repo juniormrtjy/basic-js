@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/calc.css" />
+    <title>Never delete this</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Calc This</h1>
+        <svg
+          width="25"
+          height="25"
+          viewBox="0 0 25 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.5 21.0937C12.5 21.0937 2.73438 15.625 2.73438 8.98438C2.73438 7.81044 3.14111 6.67276 3.88537 5.7649C4.62964 4.85704 5.66546 4.23509 6.8166 4.00486C7.96774 3.77464 9.16309 3.95035 10.1993 4.50212C11.2355 5.05388 12.0485 5.94761 12.5 7.03125V7.03125C12.9515 5.94761 13.7645 5.05388 14.8007 4.50212C15.8369 3.95035 17.0323 3.77464 18.1834 4.00486C19.3345 4.23509 20.3704 4.85704 21.1146 5.7649C21.8589 6.67276 22.2656 7.81044 22.2656 8.98438C22.2656 15.625 12.5 21.0937 12.5 21.0937Z"
+            stroke="#4169E1"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </header>
+      <div class="c-01 ca"></div>
+      <div class="c-02 ca"></div>
+
+      <section class="show-numbers">
+        <div class="box">
+          <div>
+            <p class="number-01 numbers">0</p>
+            <button class="plus buttons" onclick="addOne()">+</button>
+            <button class="minus buttons" onclick="removeOne()">-</button>
+          </div>
+          <div>
+            <p class="number-02 numbers">0</p>
+            <button class="plus buttons" onclick="addTwo()">+</button>
+            <button class="minus buttons" onclick="removeTwo()">-</button>
+          </div>
+        </div>
+        <p class="resultado">Result</p>
+      </section>
+
+      <section class="btns">
+        <button onclick="plus()">Plus</button>
+        <button onclick="minus()">Minus</button>
+        <button onclick="multi()">Multi</button>
+        <button onclick="divi()">Divi</button>
+      </section>
+    </main>
+    <!-- SCRIPT -->
+    <script src="../js/calc.js"></script>
+  </body>
+</html>
