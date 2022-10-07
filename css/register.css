@@ -80,7 +80,7 @@ main {
 
 main h2 {
   margin-bottom: 1rem;
-  width: 100%;
+  /* width: 100%; */
 }
 
 main ul {
@@ -95,14 +95,14 @@ main ul a {
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 0.8rem;
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* H4 */
 main h4 {
   text-align: center;
   color: rgba(26, 23, 23, 0.38);
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* FORM */
@@ -130,12 +130,12 @@ main form input {
 
 .form p a {
   color: rgba(26, 23, 23, 0.38);
-  width: 100%;
+  /* width: 100%; */
 }
 .form p span {
   color: #279574;
   font-weight: bold;
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* MEDIA QUERY */
