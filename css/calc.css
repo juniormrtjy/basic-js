@@ -118,3 +118,19 @@ h1 {
   border-radius: 8px;
   cursor: pointer;
 }
+
+@media (min-width: 461px) {
+  .ca {
+    width: 400px;
+  }
+
+  .c-01 {
+    top: 22%;
+    left: -10px;
+  }
+
+  .c-02 {
+    top: 35%;
+    right: -10px;
+  }
+}
