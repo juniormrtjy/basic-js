@@ -17,26 +17,21 @@ main {
 }
 
 .ca {
-  width: 300px;
+  width: 700px;
   height: 40px;
   background: var(--primmary-color);
-  background-image: linear-gradient(
-    to bottom,
-    var(--primmary-color),
-    var(--secondary)
-  );
   position: absolute;
+  z-index: -1;
   transform: rotate(10deg);
-  border-radius: 50px 90px 50px 120px;
 }
 
 .c-01 {
-  top: 15%;
+  top: 33%;
   left: -10px;
 }
 
 .c-02 {
-  top: 25%;
+  top: 35%;
   right: -10px;
 }
 
@@ -53,7 +48,6 @@ h1 {
   width: 90%;
   height: 200px;
   margin: auto;
-  margin-top: 40%;
   border: 1px solid black;
   border-radius: 8px;
   background-image: linear-gradient(
