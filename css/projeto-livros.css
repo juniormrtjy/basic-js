@@ -184,7 +184,7 @@ header nav button {
   width: 15px;
   height: 15px;
   top: 50%;
-  left: 3px;
+  left: 4.5px;
   transform: translateY(-50%);
   border-radius: 50%;
   background: var(--box-shadow);
