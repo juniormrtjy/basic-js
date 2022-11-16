@@ -1,14 +1,3 @@
-const divs = document.querySelectorAll('.effect')
-
-divs.forEach(index => {
-  index.addEventListener('mouseover', () => {
-    index.classList.add('test')
-  })
-  index.addEventListener('mouseleave', () => {
-    index.classList.remove('test')
-  })
-})
-
 function inSection() {
   let a = document.querySelector('section')
   return (a.innerHTML = `<div class="effect">
@@ -30,5 +19,4 @@ function inSection() {
   />
 </div>`)
 }
-
 inSection()

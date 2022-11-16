@@ -19,6 +19,6 @@ img {
   transition: transform 0.3s;
 }
 
-.test:hover img {
+.effect:hover img {
   transform: scale(1.1);
 }
