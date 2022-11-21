@@ -19,8 +19,12 @@ function createDivBtn(...content) {
   return `<div class="btns">${content}</div>`
 }
 
-function createButton(content) {
-  return `<button>${content}</button>`
+function createPlusButton(content) {
+  return `<button class="add">${content}</button>`
+}
+
+function createMinusButton(content) {
+  return `<button class="remove">${content}</button>`
 }
 
 function addItem() {
@@ -31,7 +35,7 @@ function addItem() {
   const sectionHtmlAdd = createSection(
     createDivBox(
       createParagraph(createSpan(`${fruitArray}`)) +
-        createDivBtn(createButton('+') + createButton('-'))
+        createDivBtn(createPlusButton('+') + createMinusButton('-'))
     )
   )
   const main = document.querySelector('main')
