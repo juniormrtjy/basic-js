@@ -46,7 +46,9 @@ function createSection(date, ...game) {
   `
 }
 
-document.body.innerHTML +=
+const main = document.querySelector('main')
+
+main.innerHTML +=
   createSection(
     createCalendarTitle('Domingo', '20/11'),
     createGames(
