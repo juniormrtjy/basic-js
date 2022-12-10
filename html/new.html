@@ -4,9 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/new.css" />
     <title>Rebuild</title>
+    <style>
+      textarea {
+        padding: 5px;
+        border-radius: 4px;
+        display: block;
+        width: 300px;
+        height: 100px;
+      }
+    </style>
   </head>
   <body>
+    <button id="reset" onclick="resetTxt()">Reset</button>
+    <h1>Eventos</h1>
+    <div class="red div-color" onclick="makeRed()"></div>
+    <div class="blue div-color" onclick="makeBlue()"></div>
+    <div class="green div-color" onclick="makeGreen()"></div>
+
+    <textarea name="text" id="txt-area" oninput="getText(this)"></textarea>
+
+    <button onclick="plusTxt()">Plus Font</button>
+    <button onclick="minusTxt()">Minus Font</button>
+
+    <p id="my-txt">Escreva alguma coisa</p>
+
+    <h2>Choose Image</h2>
+    <input type="text" name="" id="get-img-link" oninput="imgLink(this)" />
+
+    <img src="" alt="" id="img" />
     <!-- SCRIPT -->
     <script src="../js/new.js"></script>
   </body>
