@@ -31,8 +31,18 @@ body {
   margin-top: 20px;
 }
 
+#div-img {
+  overflow: hidden;
+  max-width: 300px;
+}
+
 #img {
   display: block;
   max-width: 300px;
   margin-top: 10px;
+  transition: transform 0.1s;
+}
+
+#img:hover {
+  transform: scale(1.06);
 }
