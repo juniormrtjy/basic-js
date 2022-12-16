@@ -95,10 +95,11 @@ header img {
 .details li {
   padding: 0.5rem;
   border-radius: 0.8rem;
+  border: 1px solid white;
 }
 
 .details li:hover {
-  box-shadow: 0px 0px 10px #cfcfcf;
+  border: 1px solid rgb(224, 224, 224);
 }
 
 /* LINKS */
@@ -155,4 +156,12 @@ nav .wrapper {
 .links li span {
   font-size: 1.8rem;
   color: var(--white);
+}
+
+@media (min-width: 501px) {
+  nav {
+    max-width: 35rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
