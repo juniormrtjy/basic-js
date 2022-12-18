@@ -3,8 +3,16 @@
   padding: 0;
 }
 
+:root {
+  font-size: 62.5%;
+  --poppins: 'Poppins', sans-serif;
+  --merienda: 'Merienda One', sans-serif;
+}
+
 body {
-  padding: 10px;
+  font-size: 1.6rem;
+  font-family: var(--poppins);
+  padding: 1rem;
 }
 
 button {
@@ -57,4 +65,27 @@ button:hover {
 
 #img:hover {
   transform: scale(1.06);
+}
+
+#modal .img {
+  margin: 1rem;
+  max-width: 30rem;
+  background: tomato;
+  border: 2px solid #f2ede4;
+}
+
+#modal img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#modal .modal {
+  height: 50rem;
+  background: red;
+  position: fixed;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -47,3 +47,17 @@ const pickImg = document.querySelector('#img')
 function imgLink(link) {
   pickImg.src = link.value
 }
+// get de modal img.src
+
+let getImg = document.querySelector('.img img')
+let testModal = document.querySelector('.modal')
+let modalImg = document.querySelector('.modal img')
+
+function makeImg(tst) {
+  getImg.src = `${tst}`
+  return tst
+}
+
+getImg.addEventListener('click', function () {
+  modalImg.src = getImg.src
+})
