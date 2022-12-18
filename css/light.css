@@ -89,15 +89,3 @@ header .wrapper::before {
 .resize {
   display: none;
 }
-
-@media (min-width: 451px) {
-  .web {
-    display: none;
-  }
-
-  .resize {
-    display: block;
-    font-size: 4rem;
-    margin-top: 30rem;
-  }
-}
