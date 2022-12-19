@@ -24,7 +24,7 @@
     <main>
       <div class="m-wrapper">
         <!-- NAVIGATION -->
-        <nav>
+        <nav id="nav">
           <div class="wrapper">
             <ul class="menu">
               <li><a href="#day-one">Day 01</a></li>
@@ -35,107 +35,83 @@
         </nav>
         <!-- GALLERY -->
         <section id="gallery">
+          <!-- MODAL -->
+          <div class="modal m-close">
+            <div class="close">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25 7L7 25"
+                  stroke="#F2EDE4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M25 25L7 7"
+                  stroke="#F2EDE4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <img src="" alt="" />
+          </div>
           <div class="wrapper">
             <!-- DAY ONE -->
             <div class="img">
               <div id="day-one" class="days"></div>
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
             </div>
             <!-- DAY TWO -->
             <div class="img">
               <div id="day-two" class="days"></div>
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
             </div>
             <!-- DAY THREE -->
             <div class="img">
               <div id="day-three" class="days"></div>
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1465188035480-cf3a60801ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
             </div>
           </div>
         </section>
       </div>
     </main>
+    <div class="up">
+      <a href="#nav">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+            stroke="black"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M11.7625 15.2375L16 11L20.2375 15.2375"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16 21V11"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </div>
     <!-- SCRIPT -->
     <script src="../js/forfun.js"></script>
   </body>
