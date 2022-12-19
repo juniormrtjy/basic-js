@@ -33,14 +33,12 @@ main {
   height: 48.4rem;
   overflow: hidden;
   padding-block: 1rem;
-  /* border: 1px solid green; */
 }
 
 .m-wrapper {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  /* border: 1px solid red; */
   max-width: 130rem;
   margin: auto;
 }
@@ -83,8 +81,4 @@ nav {
   height: 23rem;
   object-fit: cover;
   border-radius: 0.5rem;
-}
-
-#gallery img:hover {
-  object-fit: contain;
 }
