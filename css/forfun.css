@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --poppins: 'Poppins', sans-serif;
+  --merienda: 'Merienda One', sans-serif;
+
+  /* colors */
+  --main: #0d0d0d;
+  --main-light: #f2ede4;
+  --alt-dark: #403e4b;
+  --alt-light: #d9d4cc;
+}
+
+html {
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--poppins);
+  background: var(--main-light);
+  color: var(--main);
+}
+
+/* MAIN */
+
+main {
+  margin-top: 5rem;
+  height: 48.4rem;
+  overflow: hidden;
+  padding-block: 1rem;
+  /* border: 1px solid green; */
+}
+
+.m-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* border: 1px solid red; */
+  max-width: 130rem;
+  margin: auto;
+}
+
+/* NAVIGATION */
+
+nav {
+  flex-shrink: 0;
+}
+
+/* GALLERY */
+
+.days {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#gallery .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+#gallery .img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-height: 46rem;
+  overflow-y: scroll;
+
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+#gallery img {
+  display: block;
+  width: 33rem;
+  height: 23rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+#gallery img:hover {
+  object-fit: contain;
+}
