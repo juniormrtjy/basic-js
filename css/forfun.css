@@ -181,10 +181,21 @@ nav {
     max-width: 40rem !important;
     max-height: 60vh !important;
   }
+  .close {
+    left: 2rem;
+  }
 }
 
 .up {
   position: fixed;
-  bottom: 2rem;
-  right: 4rem;
+  bottom: 0;
+  text-align: center;
+}
+
+.up a {
+  display: block;
+  color: var(--alt-light);
+  width: 100vw;
+  padding: 1rem;
+  background: var(--alt-dark);
 }
