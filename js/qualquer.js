@@ -1,28 +1,13 @@
-// register
-const userName = document.querySelector('#username')
-const userPass = document.querySelector('#userpass')
-const registerBtn = document.querySelector('.register')
+const showMenu = document.querySelector('.show-menu')
+const nav = document.querySelector('nav')
+const links = document.querySelectorAll('.menu a')
 
-function register() {
-  if (
-    localStorage.getItem('Registerusername') == 'null' ||
-    localStorage.getItem('Registerusername') == undefined ||
-    localStorage.getItem('Registerusername') == ''
-  ) {
-    localStorage.setItem('Registerusername', userName.value)
-    localStorage.setItem('Registeruserpass', userPass.value)
-  } else {
-    alert('Você não escolheu um nome de usuário.')
-  }
-}
-const getUserName = localStorage.getItem('Registerusername')
-const getUserPass = localStorage.getItem('Registeruserpass')
+showMenu.addEventListener('click', function () {
+  nav.classList.toggle('show')
+})
 
-if (
-  localStorage.getItem('Registerusername') != 'null' &&
-  localStorage.getItem('Registerusername') != ''
-) {
-  let setLink = 'Registrar'
-  let linkUrl = 'https://www.google.com'
-  registerBtn.innerHTML = setLink.link(linkUrl)
-}
+links.forEach(link => {
+  link.addEventListener('click', function () {
+    nav.classList.toggle('show')
+  })
+})

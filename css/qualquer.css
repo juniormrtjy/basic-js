@@ -2,67 +2,80 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 :root {
   font-size: 62.5%;
+  --poppins: 'Poppins', sans-serif;
+  --merienda: 'Merienda One', sans-serif;
+  --font: 'Inter Tight', sans-serif;
+
+  /* colors */
+  --main: #0d0d0d;
+  --main-light: #fff;
+  --alt-dark: #403e4b;
+  --alt-light: #d9d4cc;
 }
 
 body {
   font-size: 1.6rem;
-  text-align: center;
+  font-family: var(--font);
+  background: var(--main-light);
 }
 
-.wrapper {
-  max-width: 102rem;
-  margin: auto;
+i {
+  font-size: 3rem;
+  background: white;
+  color: black;
+  border-radius: 100%;
+  padding: 0.3rem;
 }
 
-/* HEADER */
-header {
-  margin-top: 8rem;
-  margin-bottom: 2rem;
+nav {
+  color: white;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1672076292491-28ef139f5e5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
+  background-size: 100% 100%;
 }
 
-/* FORM */
+.nav {
+  position: relative;
+}
 
-form {
+.show-menu {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.menu {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  padding-left: 4rem;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  transition: left 0.3s;
+}
+
+nav.show .menu {
+  left: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+
+  display: flex;
   align-items: center;
-  max-width: 30rem;
-  margin: auto;
-  border: 1px solid #ccc;
-  border-radius: 0.4rem;
-  padding-block: 1rem;
-  transition: border-color 0.1s;
-}
-
-form:hover {
-  border-color: rgb(134, 134, 134);
-}
-
-label {
-  width: 19rem;
-  margin-bottom: 1rem;
-}
-
-input {
-  border-radius: 0.4rem;
-  border: 1px solid #ccc;
-  padding: 0.5rem;
-}
-
-input:focus {
-  border: 1px solid red;
-}
-
-button {
-  padding: 0.5rem;
-  background: #0d0d0d;
-  color: #f2ede4;
-  border: none;
-  border-radius: 0.4rem;
-  cursor: pointer;
+  gap: 1rem;
+  font-weight: bold;
 }

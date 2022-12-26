@@ -8,10 +8,11 @@
   font-size: 62.5%;
   --poppins: 'Poppins', sans-serif;
   --merienda: 'Merienda One', sans-serif;
+  --font: 'Roboto Mono', sans-serif;
 
   /* colors */
   --main: #0d0d0d;
-  --main-light: #f2ede4;
+  --main-light: #fff;
   --alt-dark: #403e4b;
   --alt-light: #d9d4cc;
 }
@@ -22,7 +23,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: var(--poppins);
+  font-family: var(--font);
   background: var(--main-light);
   color: var(--main);
 }
@@ -35,6 +36,12 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+/* HEADER */
+
+#header h2 {
+  font-weight: 400;
 }
 
 /* MAIN */
