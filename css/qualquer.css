@@ -17,10 +17,25 @@
   --alt-light: #d9d4cc;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-size: 1.6rem;
   font-family: var(--font);
   background: var(--main-light);
+  background-image: url('https://images.unsplash.com/photo-1672079743723-ac70610b6978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 i {
@@ -33,9 +48,6 @@ i {
 
 nav {
   color: white;
-  height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1672076292491-28ef139f5e5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
-  background-size: 100% 100%;
 }
 
 .nav {
@@ -43,7 +55,7 @@ nav {
 }
 
 .show-menu {
-  position: absolute;
+  position: fixed;
   top: 1rem;
   left: 1rem;
   z-index: 10;
@@ -78,4 +90,68 @@ nav.show .menu {
   align-items: center;
   gap: 1rem;
   font-weight: bold;
+}
+
+p {
+  background: rgb(24, 24, 24);
+  border-radius: 0.4rem;
+  border: 1px solid #a9eff1;
+  max-width: 40rem;
+  padding: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 8rem;
+  margin-left: 3rem;
+}
+
+.any-link {
+  max-width: 15rem;
+  margin-left: 3rem;
+  padding: 1.5rem;
+  background: #202020;
+  border: 1px solid #222a2b;
+  border-radius: 0.4rem;
+  color: white;
+  font-weight: bold;
+  display: block;
+}
+
+.any-link:hover {
+  background: black;
+}
+
+@media (min-width: 800px) {
+  nav {
+    background: none;
+    height: auto;
+
+    padding-block: 2rem;
+  }
+
+  .show-menu {
+    display: none;
+  }
+
+  .menu {
+    list-style: none;
+    position: relative;
+    left: 0;
+    width: auto;
+    height: auto;
+    background: none;
+    padding-left: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+    transition: left 0.3s;
+  }
+
+  p {
+    margin-left: 3rem;
+  }
+
+  .any-link {
+    margin-left: 3rem;
+  }
 }
