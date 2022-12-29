@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+section {
+  border: 1px solid #ccc;
+  max-width: 70vw;
+  margin: auto;
+  margin-top: 4rem;
+  padding-block: 1rem;
+
+  position: relative;
+}
+
+.options {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+.options button {
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border: 1px solid #ccc;
+  background: rgb(231, 231, 231);
+}
+
+.adds {
+  display: grid;
+  gap: 0.4rem;
+  border: 1px solid black;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.h1 button {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
