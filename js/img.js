@@ -1,22 +1,19 @@
-const hOne = document.querySelector('#add-h1')
 const sec = document.querySelector('section .wrapper')
-const hh1 = document.querySelector('.h1')
+const hOne = document.querySelector('#add-h1')
+const hP = document.querySelector('#add-p')
 
-function moveH1() {
-  let removeH1 = document.querySelector('.h1 button')
-  removeH1.style.display = 'inline'
-  removeH1.style.opacity = '1'
-  removeH1.style.visibility = 'visible'
+function remove(arg) {
+  // arg.remove()
 }
 
-function testH1(aw) {
-  let removeH1 = document.querySelector('.h1 button')
-  removeH1.addEventListener('click', function () {
-    aw.remove(this)
-    removeH1.remove(this)
-  })
+function format(arg) {
+  arg.style.color = 'tomato'
 }
 
 function addH1() {
-  sec.innerHTML += `<h1>${hOne.value}</h1>`
+  sec.innerHTML += `<h1 onclick="remove(this)">${hOne.value}</h1>`
+}
+
+function addP() {
+  sec.innerHTML += `<p onclick="remove(this), format(this)">${hP.value}</p>`
 }

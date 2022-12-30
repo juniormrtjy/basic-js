@@ -40,9 +40,13 @@ section {
   border-radius: 0.3rem;
 }
 
+.adds input {
+  padding: 5px;
+}
+
 .h1 button {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
+  /* display: none; */
+  /* visibility: hidden; */
+  /* opacity: 0; */
   transition: opacity 0.3s;
 }
