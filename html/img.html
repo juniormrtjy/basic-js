@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ... -->
+
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../css/img.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Img</title>
   </head>
   <body>
-    <section>
-      <div class="options">
-        <!-- add h1 -->
-        <div class="add-h1 adds">
-          <h4>add h1</h4>
-          <input type="text" id="add-h1" />
-          <button onclick="addH1()">Add</button>
-        </div>
-        <!-- ADD P -->
-        <div class="add-p adds">
-          <h4>add paragraph</h4>
-          <input type="text" id="add-p" />
-          <button onclick="addP()">Add</button>
-        </div>
+    <nav id="nav">
+      <div class="wrapper nav">
+        <a href="#" class="title">Best place for your images.</a>
+        <ul class="menu flex gap-3">
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
       </div>
-      <div class="wrapper"></div>
-    </section>
+    </nav>
+    <!-- HEADER -->
+    <header id="header">
+      <div class="wrapper flex">
+        <div class="intro">
+          <h1>Find your image</h1>
+          <p>the best choice for any work.</p>
+          <button>
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.96875 17.1875C13.9556 17.1875 17.1875 13.9556 17.1875 9.96875C17.1875 5.98194 13.9556 2.75 9.96875 2.75C5.98194 2.75 2.75 5.98194 2.75 9.96875C2.75 13.9556 5.98194 17.1875 9.96875 17.1875Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.0734 15.0734L19.25 19.25"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            Start
+          </button>
+        </div>
+        <aside>
+          <img
+            src="https://images.unsplash.com/photo-1671379827170-aaf624d3ead9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+            alt=""
+          />
+        </aside>
+      </div>
+    </header>
     <!-- SCRIPT -->
     <script src="../js/img.js"></script>
   </body>

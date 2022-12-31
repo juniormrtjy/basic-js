@@ -4,49 +4,137 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+
+  /* colors */
+  --sky-200: #bae6fd;
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+  --sky-600: #0284c7;
+  --sky-900: #0c4a6e;
+
+  --zinc-900: #18181b;
+  --zinc-800: #27272a;
+  --zinc-600: #52525b;
+
+  --white: #fff;
+}
+
 body {
-  font-family: sans-serif;
+  font-size: 1.6rem;
+  font-family: var(--font);
 }
 
-section {
-  border: 1px solid #ccc;
-  max-width: 70vw;
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 90rem;
   margin: auto;
-  margin-top: 4rem;
-  padding-block: 1rem;
-
-  position: relative;
+  padding-block: 5rem;
 }
 
-.options {
-  position: absolute;
-  top: 0px;
-  right: 0;
+/* DESIGN */
+
+.flex {
+  display: flex;
 }
 
-.options button {
-  padding: 0.3rem;
-  border-radius: 0.2rem;
-  border: 1px solid #ccc;
-  background: rgb(231, 231, 231);
+.gap-2 {
+  gap: 2rem;
 }
 
-.adds {
-  display: grid;
-  gap: 0.4rem;
-  border: 1px solid black;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
+.gap-3 {
+  gap: 3rem;
 }
 
-.adds input {
-  padding: 5px;
+.gap-4 {
+  gap: 4rem;
 }
 
-.h1 button {
-  /* display: none; */
-  /* visibility: hidden; */
-  /* opacity: 0; */
-  transition: opacity 0.3s;
+.gap-5 {
+  gap: 5rem;
+}
+
+/* nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+}
+
+.nav .title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--zinc-800);
+  transition: color 0.2s;
+}
+
+.menu a {
+  color: var(--zinc-800);
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: color 0.2s;
+}
+
+.menu a:hover,
+.nav .title:hover {
+  color: var(--sky-400);
+}
+
+/* HEADER */
+#header img {
+  max-width: 40rem;
+  display: block;
+  border-radius: 0.4rem;
+  transform: rotate(-2deg);
+}
+
+#header .wrapper {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#header .intro h1 {
+  color: var(--zinc-900);
+  margin-top: 8rem;
+}
+
+#header .intro p {
+  color: var(--zinc-600);
+}
+
+#header button {
+  width: 15rem;
+  background: var(--sky-600);
+
+  padding: 1rem;
+  margin-top: 5rem;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  color: white;
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+#header button:hover {
+  background: var(--sky-500);
 }
