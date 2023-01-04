@@ -92,7 +92,10 @@ a {
 
 /* HEADER */
 #header img {
+  width: 40rem;
   max-width: 40rem;
+  height: 30rem;
+  object-fit: cover;
   display: block;
   border-radius: 0.4rem;
   transform: rotate(-2deg);
@@ -137,4 +140,10 @@ a {
 
 #header button:hover {
   background: var(--sky-500);
+}
+
+#header aside {
+  background: var(--sky-600);
+  padding: 1.5rem;
+  border-radius: 0.4rem;
 }
