@@ -64,32 +64,49 @@ não lembro muito bem de tudo, mas dá p fazer algo
 // tentando uma manipulação doida. Vou fazer o que vier a mente e vou codando.
 
 {
+  // CRIAR BUTTON QUE ADICIONA UM ITEM AO ARRAY
   function aBtn() {
     return `<button onclick="addAr()">Adicionar array</button>`
   }
 
+  // MOSTRA O ARRAY NO CONSOLE.LOG()
   function consoleLog() {
     return `<button onclick="consLog()">Console</button>`
   }
 
+  // MOSTRA O ARRAY NO DOM
   function showArr() {
     return `<button onclick="showArray()">Mostrar nomes</button>`
   }
 
+  // CRIA UMA DIV PARA CONTER OS ITEMS DO ARRAY
   function divArr() {
     return `<div id="arrayy"></div>`
   }
 
+  // CRIA UMA TAG SPAN PARA QUE EU POSSA ESTILIZAR CADA ELEMENTO
   function createSpan(txt) {
     return `<span>${txt}</span>`
   }
 
+  // CRIANDO O ARRAY
   let a1 = []
+
+  // VARIÁVEL QUE VAI RECEBER O VALOR PARA ADICIONAR UM ITEM AO FINAL DO ARRAY
   let addLast
+
+  // VARIÁVEL PARA IMPEDIR QUE O USUÁRIO CLIQUE PARA MOSTRAR OS NOMES E ISSO ACONTEÇA INFINITAMENTE
   let arrHidden = 0
+
+  // CRIANDO A FUNÇÃO QUE ADICIONA UM ITEM AO ARRAY
   function addAr() {
+    // USUÁRIO ESCOLHE O NOME
     addLast = prompt('Escreva um nome:')
+
+    // IMPEDIR QUE INSIRA UM VALOR VAZIO
     let stopThem = addLast.includes(' ')
+
+    // TENTATIVA DE EVITAR DADOS INVÁLIDOS
     if (addLast == null || addLast == undefined || addLast == '' || stopThem) {
       alert('Você não inseriu uma informação válida.')
     } else {
@@ -102,17 +119,23 @@ não lembro muito bem de tudo, mas dá p fazer algo
     console.log(a1)
   }
 
+  // CRIANDO A FUNÇÃO QUE IMPRIME O ARRAY NO DOM
   function showArray() {
+    // AINDA EM DÚDIVDA SOBRE ESSA PARTE, DEPOIS EU PENSO COM CALMA. MAS PEGA OS ITEMS DO ARRAY E COLOCA DENTRO DA TAG SPAN.
     let elem = []
     a1.forEach(aa => {
       elem.push(createSpan(aa))
     })
+
+    // CONDICIONAL PARA IMPEDIR QUE O USUÁRIO FIQUE IMPRIMINDO O ARRAY INFINITAMENTE
     if (arrHidden == 0) {
       arrayy.innerHTML = elem
       arrHidden = 1
     } else {
       alert('O array está atualizado')
     }
+
+    // ESTILIZANDO OS ITEMS COM A TAG <SPAN>
     let nai = document.querySelectorAll('span')
     nai.forEach(items => {
       items.style.display = 'inline-block'
@@ -123,8 +146,10 @@ não lembro muito bem de tudo, mas dá p fazer algo
     })
   }
 
+  // INSERINDO OS ELEMENTOS NO DOM
   document.body.innerHTML += aBtn() + consoleLog() + showArr() + divArr()
 
+  // ESTILIZANDO OS AS TAGS <BUTTON>
   const buttons = document.querySelectorAll('button')
   buttons.forEach(btns => {
     btns.style.display = 'block'
