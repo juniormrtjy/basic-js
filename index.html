@@ -4,50 +4,169 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Index Js - basic</title>
     <style>
-      body {
-        background: #0d0d0d;
-        color: #f2ede4;
+      :root {
+        --dark: rgb(0, 0, 0);
+        --light: #fff;
+        --border-color: #d0d3da;
+        --link-txt-color: #535353;
+        --bg-resumo: #ff7675;
+        --bg-border: #f88989;
+        --resumo-light: #ffffff;
       }
-      div {
-        display: grid;
-        gap: 20px;
 
-        max-width: 300px;
+      body {
+        background: var(--light);
+        color: var(--dark);
+        font-family: sans-serif;
+      }
+
+      .menu {
+        max-width: 90%;
+        margin: auto;
+        padding-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
       }
 
       a {
-        background-color: #1b1b1b;
-        color: #f2ede4;
-        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        width: 200px;
+        max-width: 100%;
+        background-color: var(--light);
         padding: 10px;
-        box-shadow: 10px 2px 12px #141414;
-        border-radius: 8px;
+        border-radius: 4px;
+        border: 1px solid var(--border-color);
+        margin-block: 5px;
+
+        color: var(--link-txt-color);
+        font-size: 20px;
+        text-decoration: none;
+
         transition: 0.2s;
       }
 
       a:hover {
-        transform: scale(1.03);
+        border-color: var(--link-txt-color);
+      }
+
+      i {
+        font-size: 22px;
+      }
+
+      .final {
+        background: var(--bg-resumo);
+        color: var(--resumo-light);
+      }
+
+      .final:hover {
+        border-color: var(--bg-border);
+      }
+
+      @media (max-width: 1035px) {
+        .menu {
+          justify-content: center;
+        }
+      }
+
+      /* dark mode */
+      body.dark {
+        --dark: white;
+        --light: rgb(26, 26, 26);
+        --border-color: #f8f8f8;
+        --link-txt-color: #adadad;
+        --bg-resumo: #d63031;
+        --bg-border: #e08787;
+        --resumo-light: #ffffff;
+      }
+
+      .dark-toggle {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 34px;
+        height: 24px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+
+        padding-inline: 3px;
+      }
+
+      .dark-toggle i {
+        position: absolute;
+        transition: 0.4s;
+        left: 6%;
       }
     </style>
   </head>
-  <body>
-    <h1>Index - JavaScript</h1>
-    <div>
-      <a href="html/projeto-livros.html">Projeto Livros</a>
-      <a href="html/simples-perguntas.html">Jogo simples de perguntas</a>
-      <a href="html/simple-card.html">Simple Card</a>
-      <a href="html/fruit-list.html">Fruit List</a>
-      <a href="html/light.html">Light in the darkness</a>
-      <a href="html/profile.html">Profile</a>
-      <a href="html/calc.html">Calc</a>
-      <a href="html/img.html">Img</a>
-      <a href="html/qualquer.html">Qualquer coisa</a>
-      <a href="html/copa.html">Copa</a>
-      <a href="html/new.html">New</a>
-      <a href="html/forfun.html">For Fun</a>
-      <a href="html/powerjs.html">Powerfull JS</a>
+  <body class="">
+    <div class="dark-toggle">
+      <i class="bx bx-sun" id="mode"></i>
     </div>
+    <h1>Index - JavaScript</h1>
+    <div class="menu">
+      <a href="html/projeto-livros.html"
+        ><i class="bx bx-link-alt"></i> Projeto Livros</a
+      >
+      <a href="html/simples-perguntas.html"
+        ><i class="bx bx-link-alt"></i> Jogo simples de perguntas</a
+      >
+      <a href="html/simple-card.html"
+        ><i class="bx bx-link-alt"></i> Simple Card</a
+      >
+      <a href="html/fruit-list.html"
+        ><i class="bx bx-link-alt"></i> Fruit List</a
+      >
+      <a href="html/light.html"
+        ><i class="bx bx-link-alt"></i> Light in the darkness</a
+      >
+      <a href="html/profile.html"><i class="bx bx-link-alt"></i> Profile</a>
+      <a href="html/calc.html"><i class="bx bx-link-alt"></i> Calc</a>
+      <a href="html/img.html"><i class="bx bx-link-alt"></i> Img</a>
+      <a href="html/qualquer.html"
+        ><i class="bx bx-link-alt"></i> Qualquer coisa</a
+      >
+      <a href="html/copa.html"><i class="bx bx-link-alt"></i> Copa</a>
+      <a href="html/new.html"><i class="bx bx-link-alt"></i> New</a>
+      <a href="html/forfun.html"><i class="bx bx-link-alt"></i> For Fun</a>
+      <a href="html/powerjs.html"
+        ><i class="bx bx-link-alt"></i> Powerfull JS</a
+      >
+      <a href="html/resumo.html" class="final"
+        ><i class="bx bx-link-alt"></i> Resumo</a
+      >
+    </div>
+
+    <!-- script -->
+    <script>
+      let darkMode = false
+      const toggle = document.querySelector('.dark-toggle')
+      toggle.addEventListener('click', function () {
+        if (darkMode == false) {
+          mode.classList.remove('bx', 'bx-sun')
+          mode.classList.add('bx', 'bx-moon')
+          mode.style.left = '55%'
+          darkMode = true
+          document.body.classList.add('dark')
+        } else {
+          mode.classList.remove('bx', 'bx-moon')
+          mode.classList.add('bx', 'bx-sun')
+          mode.style.left = '6%'
+          darkMode = false
+          document.body.classList.remove('dark')
+        }
+      })
+    </script>
   </body>
 </html>
