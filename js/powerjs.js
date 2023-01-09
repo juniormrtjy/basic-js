@@ -19,8 +19,8 @@ function openModal(img) {
   divModal.style.opacity = '1'
   modal = true
   if (modal == true) {
-    getList.style.maxHeight = '100%'
     getList.style.overflow = 'hidden'
+    document.body.style.overflow = 'hidden'
   }
 }
 
@@ -34,5 +34,6 @@ function closeModal() {
   if (modal == false) {
     getList.style.maxHeight = ''
     getList.style.overflow = 'auto'
+    document.body.style.overflow = ''
   }
 }
