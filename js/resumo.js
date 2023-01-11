@@ -172,3 +172,48 @@ não lembro muito bem de tudo, mas dá p fazer algo
   console.log(`#${hex}`)
   document.body.style.color = '#' + hex
 }
+
+{
+  let body = document.querySelector('body')
+  body.style.fontFamily = 'Poppins, sans-serif'
+  // Math.random()
+  let randomNumber = function (num) {
+    return Math.floor(Math.random() * `${num}`)
+  }
+  // HTML TAGS
+  // H1
+  function createH1(content) {
+    return `<h1>${content}</h1>`
+  }
+
+  // BUTTON
+  function createButton(event, content) {
+    return `<button onclick="${event}">${content}</button>`
+  }
+  /* ============== END ============= */
+
+  // gerar código hexadecimal
+  function randomHexadecimal() {
+    return `#${Math.floor(Math.random() * 0x1000000).toString(16)}`
+  }
+
+  // object com algumas configs
+  let configs = {
+    color: randomHexadecimal,
+    backgroundColor: randomHexadecimal
+  }
+
+  function randomBg() {
+    body.style.backgroundColor = configs.backgroundColor()
+  }
+
+  function randomColor() {
+    body.style.color = configs.color()
+  }
+
+  body.innerHTML +=
+    createH1('Maratona JavaScript 01') +
+    createButton('randomBg()', 'Random bg color') +
+    ' ' +
+    createButton('randomColor()', 'Random txt color')
+}
