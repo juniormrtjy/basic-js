@@ -162,3 +162,13 @@ não lembro muito bem de tudo, mas dá p fazer algo
     btns.style.cursor = 'pointer'
   })
 }
+
+{
+  // hexadecimal
+  let hex = Math.floor(Math.random() * 0x1000000).toString(16)
+  console.log(`#${hex}`)
+  document.body.style.background = '#' + hex
+  hex = Math.floor(Math.random() * 0x1000000).toString(16)
+  console.log(`#${hex}`)
+  document.body.style.color = '#' + hex
+}

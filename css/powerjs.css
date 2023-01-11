@@ -18,6 +18,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   color: #353535;
+  overflow: overlay;
 }
 
 ul {
@@ -29,11 +30,22 @@ a {
 }
 
 button {
-  padding: 0.5rem;
+  padding: 1rem 2rem;
   border-radius: 0.4rem;
-  border: 1px solid #727171;
+  border: 2px solid #6c5ce7;
   cursor: pointer;
+  font-size: 1.8rem;
+  color: #6c5ce7;
+  margin-block: 2rem;
+  transition: 0.4s;
+  background: white;
 }
+
+button:hover {
+  background: #6c5ce7;
+  color: white;
+}
+
 .wrapper {
   max-width: 60rem;
   margin: auto;
@@ -50,17 +62,20 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
   visibility: hidden;
   opacity: 0;
   transition: 0.2s;
   border-bottom: 1px solid rgb(0, 0, 0);
+
+  height: 82vh;
+  overflow: hidden;
 }
 
 .list.show {
-  display: block;
   visibility: visible;
   opacity: 1;
+  height: auto;
+  overflow: auto;
 }
 
 .list img {
