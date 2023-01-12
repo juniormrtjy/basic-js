@@ -175,91 +175,90 @@ não lembro muito bem de tudo, mas dá p fazer algo
 
 {
   var body = document.querySelector('body')
-body.style.fontFamily = 'Poppins, sans-serif'
-// Math.random()
-var randomNumber = function (num) {
-  return Math.floor(Math.random() * `${num}`)
-}
-
-// first: basic DOM Manipulation
-// STYLES
-
-// HTML TAGS
-// H1
-function createH1(content) {
-  return `<h1>${content}</h1>`
-}
-
-// BUTTON
-function createButton(event, content) {
-  return `<button onclick="${event}" style="padding:10px;color:gray;font-weight:bold">${content}</button>`
-}
-
-// SPAN
-function createSpan(content) {
-  return `<span style="display:inline-block; padding:5px;border:1px solid black; margin-right:5px;">${content}</span>`
-}
-
-// INPUT TEXT
-function createInpText(content) {
-  return `<input type="text" id="inserirTexto"/>`
-}
-
-// DIV
-function createDiv(...content) {
-  return `<div style="display:flex; gap:10px;margin-block:10px;">${content}</div>`
-}
-
-/* ============== END ============= */
-
-// gerar código hexadecimal
-function randomHexadecimal() {
-  return `#${Math.floor(Math.random() * 0x1000000).toString(16)}`
-}
-
-// object com algumas configs
-let configs = {
-  color: randomHexadecimal,
-  backgroundColor: randomHexadecimal
-}
-
-function randomBg() {
-  body.style.backgroundColor = configs.backgroundColor()
-}
-
-function randomColor() {
-  spans = document.querySelectorAll('span')
-  body.style.color = configs.color()
-  spans.forEach(colorize => {
-    colorize.style.borderColor = configs.color()
-  })
-}
-
-function addSpanText() {
-  let insText = document.querySelector('#inserirTexto')
-  let check = insText.value.includes(' ')
-
-  if (
-    insText.value == '' ||
-    insText.value == insText.value.includes(' ') ||
-    check
-  ) {
-    alert('Você não inseriu um texto válido')
-  } else {
-    body.innerHTML += createSpan(insText.value)
-    insText.innerHTML = ''
+  body.style.fontFamily = 'Poppins, sans-serif'
+  // Math.random()
+  var randomNumber = function (num) {
+    return Math.floor(Math.random() * `${num}`)
   }
-}
 
-body.innerHTML +=
-  createH1('Maratona JavaScript 01') +
-  createButton('randomBg()', 'Random bg color') +
-  ' ' +
-  createButton('randomColor()', 'Random txt color')
+  // first: basic DOM Manipulation
+  // STYLES
 
-body.innerHTML += createDiv(
-  createInpText() + createButton('addSpanText()', 'Add')
-)
-var spans
+  // HTML TAGS
+  // H1
+  function createH1(content) {
+    return `<h1>${content}</h1>`
+  }
 
+  // BUTTON
+  function createButton(event, content) {
+    return `<button onclick="${event}" style="padding:10px;color:gray;font-weight:bold">${content}</button>`
+  }
+
+  // SPAN
+  function createSpan(content) {
+    return `<span style="display:inline-block; padding:5px;border:1px solid black; margin-right:5px;">${content}</span>`
+  }
+
+  // INPUT TEXT
+  function createInpText(content) {
+    return `<input type="text" id="inserirTexto"/>`
+  }
+
+  // DIV
+  function createDiv(...content) {
+    return `<div style="display:flex; gap:10px;margin-block:10px;">${content}</div>`
+  }
+
+  /* ============== END ============= */
+
+  // gerar código hexadecimal
+  function randomHexadecimal() {
+    return `#${Math.floor(Math.random() * 0x1000000).toString(16)}`
+  }
+
+  // object com algumas configs
+  let configs = {
+    color: randomHexadecimal,
+    backgroundColor: randomHexadecimal
+  }
+
+  function randomBg() {
+    body.style.backgroundColor = configs.backgroundColor()
+  }
+
+  function randomColor() {
+    spans = document.querySelectorAll('span')
+    body.style.color = configs.color()
+    spans.forEach(c => {
+      c.style.borderColor = body.style.borderColor
+    })
+  }
+
+  function addSpanText() {
+    let insText = document.querySelector('#inserirTexto')
+    let check = insText.value.includes(' ')
+
+    if (
+      insText.value == '' ||
+      insText.value == insText.value.includes(' ') ||
+      check
+    ) {
+      alert('Você não inseriu um texto válido')
+    } else {
+      body.innerHTML += createSpan(insText.value)
+      insText.innerHTML = ''
+    }
+  }
+
+  body.innerHTML +=
+    createH1('Maratona JavaScript 01') +
+    createButton('randomBg()', 'Random bg color') +
+    ' ' +
+    createButton('randomColor()', 'Random txt color')
+
+  body.innerHTML += createDiv(
+    createInpText() + createButton('addSpanText()', 'Add')
+  )
+  var spans
 }
